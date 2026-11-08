@@ -1271,12 +1271,12 @@ const PH=[
   steps:[
    {h:'Bauraum roden',x:'Alle Bäume innerhalb der vier Altargrenzen fällen. Holz gleich zu Balken und Brettern verarbeiten, du brauchst später viel davon.'},
    {h:'Terrasse und Klippe',x:'Felsterrasse auf +55 m bis z −150. Die Klippenkante liegt in der Mitte bei z −25, weicht an den Rändern in zwei Buchten bis 9 m zurück und springt dazwischen um ±3 m vor und zurück. Die Oberkante 2 bis 4 m abrunden statt scharf stehen zu lassen. Davor Schuttkegel bis 16 m ins Tal und Felsbrocken an der Wand, damit Fels und Wiese ineinander übergehen.',cam:[-20,40,-60,400,-50,25]},
-   {h:'Kanal',x:'In der Mittelachse 20 m breit, Sohle auf +46 m, von der Rückwand bis zur Klippenkante.',cam:[0,50,-90,210,30,35]},
+   {h:'Flusslauf',x:'Kein gerader Kanal: Der Fluss schwingt in zwei weichen Bögen bis 10 m nach links und rechts, 16 m breit, Sohle auf +46 m. Zwischen z −105 und −60 teilt er sich in zwei Arme von je 9 m um eine Insel und läuft vor der Brücke wieder zusammen. Ufer mit dem Rechen abschrägen statt senkrecht.',cam:[0,50,-90,210,30,35]},
    {h:'Kerbe in der Rückwand',x:'Eine 18 m breite Kerbe bis +141 m als Quelle für die obere Fallstufe.',cam:[0,110,-150,190,15,15]},
    {h:'See und Zulauf',x:'Rund 100 × 90 m mit Mitte bei (0 | +60), bis 8 m tief. Das Ufer schwingt um 5 bis 10 % nach innen und außen, keine saubere Ellipse. Vom Fuß der Klippe ein Zulauf 24 m breit und 3 m tief.',cam:[0,0,50,250,-20,40]},
    {h:'Abfluss',x:'16 m breit und 3 m tief nach Süden, in einem Mäander mit 6 m Ausschlag statt schnurgerade. Dahinter brauchst du eine natürliche Senke, denn außerhalb kannst du nicht graben.',cam:[0,0,130,260,20,35]},
    {h:'Schlucht und Bachbett',x:'Unter der Hängebrücke eine Schlucht in die Terrasse schneiden: an der Mündung 22 m breit, nach hinten auf 10 m verengt, 45 m tief in die Terrasse hinein. Der Boden steigt von +4 auf +20. Wände nicht glätten, Vorsprünge stehen lassen. Vor der Klippe ein Bachbett 7 m breit am Klippenfuß entlang bis zum Zulauf.',cam:[-100,30,-45,175,-15,22]}],
-  masse:[['Terrasse','+55 m'],['Kanal','20 m breit, Sohle +46 m'],['Kerbe','18 m breit, +141 m'],['See','100 × 90 m, 8 m tief'],['Abfluss','16 m breit']],
+  masse:[['Terrasse','+55 m'],['Fluss','16 m, Arme 9 m, Sohle +46 m'],['Kerbe','18 m breit, +141 m'],['See','100 × 90 m, 8 m tief'],['Abfluss','16 m breit']],
   hints:['[Sicher] Ein Fundament setzen und wieder entfernen trägt das Gelände darunter ab. So planierst du große Flächen schnell.',
    '[Wahrscheinlich] Mit dem Rechen glättest du Wege und Bauflächen, ohne Löcher zu reißen.',
    '[Vermutung] Wie viel du abträgst, hängt von deinem Tal ab. Das Modell zeigt das Ziel.']},
@@ -1284,7 +1284,7 @@ const PH=[
   lead:'Wasser kommt erst, wenn alle Ränder dicht sind. Von oben nach unten fluten, damit du jeden Abschnitt prüfen kannst.',
   steps:[
    {h:'Ränder abdichten',x:'Kanalwände, Klippenkante und Seeufer auf Lücken prüfen. Wasser findet jede Öffnung.'},
-   {h:'Kanal fluten',x:'Wasser in den Kanal auf der Terrasse geben, bis er 6 m tief steht.',cam:[0,52,-90,170,25,30]},
+   {h:'Fluss fluten',x:'Wasser in den Flusslauf geben, bis er 6 m tief steht. Beide Arme müssen gleich tief sein, sonst läuft einer leer.',cam:[0,52,-90,170,25,30]},
    {h:'Obere Fallstufe',x:'Quelle in der Kerbe auf +140 m. Rund 85 m freier Fall in den Kanal.',cam:[0,100,-150,175,10,10]},
    {h:'Untere Fallstufe',x:'Der Kanal läuft über die Klippenkante bei z −25 und fällt rund 55 m in den Zulauf.',cam:[0,30,-25,150,12,8]},
    {h:'Felsbrocken setzen',x:'Ein Brocken von etwa 8 m mittig in die untere Stufe. Er teilt den Strahl wie auf deinem ersten Bild.',cam:[0,22,-22,70,15,6]},
@@ -1389,7 +1389,7 @@ const PH=[
    {h:'Jagdhütte',x:'12 × 10 m am Ostrand, Fellgestelle davor.',cam:[128,5,38,85,40,28]},
    {h:'Wohnhäuser E3 und E4',x:'Nördlich vom Hof, in Reihe zum Uferweg.'},
    {h:'Hof',x:'16 × 12 m mit Strohdach, Kisten und Fässer an der Tür.',cam:[100,5,125,105,10,35]},
-   {h:'Felder',x:'Flickenteppich statt Rechteck: drei Felder mit unterschiedlicher Reihenrichtung und Länge, dazwischen Hecken.'},
+   {h:'Felder',x:'Vor der Mauer im Südosten, wie bei einer echten Stadt. Flickenteppich statt Rechteck: drei Felder mit unterschiedlicher Reihenrichtung und Länge, dazwischen Hecken.',cam:[124,5,138,110,140,35]},
    {h:'Steg Ost',x:'18 m in den See für Boote.'},
    {h:'Zäune und Koppel',x:'Koppel 22 × 22 m an der Jagdhütte, Zaun am Feldrand.'}],
   masse:[['Taverne','20 × 14 m, 12 m hoch'],['Felder','56 × 18 m'],['Koppel','22 × 22 m']],
@@ -1397,17 +1397,19 @@ const PH=[
  {t:'Talzugang & Dorfrand',cam:[-10,5,128,270,-12,32],
   lead:'Eine Siedlung wächst von der Hauptstraße aus. Zuerst Eingang und Straße, dann die Gebäude, die Felder und Wasser zu einer Geschichte verbinden.',
   steps:[
-   {h:'Hauptstraße',x:'6 m breit vom Tor bei (−30 | +154) in einer S-Kurve nach Norden bis zum Uferweg. Abzweige 4 m zur Brücke und zum Hof, 3 m zur Kapelle.'},
-   {h:'Palisade',x:'Quer übers Tal, im Westen in einem Bogen zurückgezogen, Stämme 1 m dick und 6,5 m hoch, oben angespitzt. Lücken für Tor und Fluss lassen.',cam:[0,5,150,280,10,36]},
-   {h:'Torhaus, Wassertor, Wachturm',x:'Zwei Tortürme 7 × 7 × 14 m mit Zinnen und Brücke darüber, Durchfahrt 9 m breit. Über dem Fluss ein Gitter als Wassertor, im Westen ein Wachturm aus Holz mit Plattform auf 12 m.',cam:[-30,8,154,95,160,24]},
+   {h:'Hauptstraße',x:'6 m breit vom Tor bei (−30 | +149) in einer S-Kurve nach Norden bis zum Uferweg. Abzweige 4 m zur Brücke und zum Hof, 3 m zum Lagerhaus.'},
+   {h:'Stadtmauer im Halbkreis',x:'Eine Steinmauer im weiten Halbkreis um die Stadt, von Klippe zu Klippe, 3 m dick und 9 m hoch mit Zinnen auf beiden Seiten. Den Bogen in 3 m langen Stücken setzen und jedes Stück leicht versetzen, damit die Rundung im Raster gelingt. Lücken für Tor und Fluss lassen.',cam:[0,10,70,330,0,52],cam:[0,5,150,280,10,36]},
+   {h:'Torhaus, Wassertor, Mauertürme',x:'Zwei Tortürme 7 × 7 × 15 m mit Spitzdach und Bogen darüber, Durchfahrt 9 m breit. Über dem Fluss ein Wassertor mit Gitter und Wehrgang. Dazu acht runde Mauertürme Ø 9 m mit Kegeldach, zwei davon an der Klippe.',cam:[-30,8,154,95,160,24]},
    {h:'Steinbrücke',x:'26 m über den Abfluss bei z +125, 6 m breit, ein Bogen mit 14 m Spannweite.',cam:[0,2,125,75,150,26]},
    {h:'Wassermühle',x:'14 × 12 m am Ostufer bei (+22 | +135) in der Außenkurve des Mäanders, Steinsockel 4 m, darüber Fachwerk. Mühlrad 9 m Durchmesser im Abfluss, Achse ins Haus.',cam:[12,4,135,65,70,28]},
-   {h:'Scheune und Heuschober',x:'Scheune 14 × 10 m östlich vom Hof mit 5 m breitem Tor, davor drei Heuschober.',cam:[115,5,112,80,150,28]},
-   {h:'Kapelle und Friedhof',x:'Kapelle 10 × 16 m mit Glockenturm (rund 29 m) im Südwesten, Friedhof 18 × 8 m mit Zaun direkt an der Palisade.',cam:[-100,6,142,100,-150,24]},
-   {h:'Lagerhaus am Tor',x:'12 × 8 m direkt hinter der Palisade, Tor zur Hauptstraße. Hier landet alles, was ins Tal kommt.',cam:[-42,4,146,70,160,24]},
-   {h:'Kleine Dinge',x:'Bienenstöcke an der späteren Obstwiese, Gemüsegärten neben vier Wohnhäusern, Netzgestelle und Räucherhütte am Fischerhaus.',cam:[-30,5,100,230,-20,35]}],
-  masse:[['Hauptstraße','6 m'],['Palisade','rund 270 m, 6,5 m hoch'],['Torhaus','2 Türme 7 × 7 × 14 m'],['Brücke','26 × 6 m, Bogen 14 m'],['Mühlrad','Ø 9 m'],['Scheune','14 × 10 m'],['Kapelle','10 × 16 m']],
-  hints:['[Sicher] Bienenstöcke gibt es im Spiel als Station der Farmerin, sie sind nicht nur Deko.',
+   {h:'Scheune und Heuschober',x:'Scheune 14 × 10 m am Ostrand neben der Koppel mit 5 m breitem Tor, drei Heuschober direkt am Hof.',cam:[108,5,92,95,150,32]},
+   {h:'Kirche am Marktplatz',x:'Die Kirche ist das Herz der Stadt: Schiff 22 × 12 m an der Westseite des Marktplatzes, Turm 7 × 7 m bis rund 42 m mit Portal zum Platz, runde Apsis hinten, Friedhof mit Zaun nördlich daneben.',cam:[-96,8,46,95,60,24]},
+   {h:'Lagerhaus am Tor',x:'12 × 8 m direkt hinter der Mauer am Tor, Tür zur Hauptstraße. Hier landet alles, was ins Tal kommt.',cam:[-48,4,130,70,160,24]},
+   {h:'Kleine Dinge',x:'Bienenstöcke vor der Mauer an der späteren Obstwiese, Gemüsegärten neben vier Wohnhäusern, Netzgestelle und Räucherhütte am Fischerhaus.',cam:[-30,5,100,230,-20,35]}],
+  masse:[['Hauptstraße','6 m'],['Stadtmauer','rund 530 m, 9 m hoch, 8 Türme'],['Torhaus','2 Türme 7 × 7 × 15 m'],['Brücke','26 × 6 m, Bogen 14 m'],['Mühlrad','Ø 9 m'],['Scheune','14 × 10 m'],['Kirche','22 × 12 m, Turm 42 m']],
+  hints:['[Wahrscheinlich] Alles in dieser Phase baust du aus Standardteilen: Stein- und Holzblöcke, Zinnen, Spitzdächer, Banner, Fackeln, Zäune und Kisten. Mods brauchst du nicht.',
+   '[Wahrscheinlich] Eine runde Mauer gelingt im Raster am besten aus kurzen geraden Stücken von 3 bis 4 m, jedes um einen Block versetzt. Aus 20 m Abstand liest sich das als Bogen.',
+   '[Sicher] Bienenstöcke gibt es im Spiel als Station der Farmerin, sie sind nicht nur Deko.',
    '[Vermutung] Ob es ein fertiges Mühlrad gibt, habe ich nicht geprüft. Plane es als statisches Bauteil aus Holzblöcken.',
    '[Vermutung] Die Palisade liegt knapp innerhalb der Altargrenze bei z +155. Bau sie lieber 2 m weiter innen, damit sie sicher im Bauraum bleibt.']},
  {t:'Verwunschene Festung',cam:[20,60,-95,330,-8,48],
@@ -1433,7 +1435,7 @@ const PH=[
   steps:[
    {h:'Uferbäume',x:'Laubbäume im Herbstlaub um den See, außerhalb des Uferwegs, 15 bis 20 m Abstand.'},
    {h:'Gärten und Hecken',x:'Ein bis zwei Bäume hinter jedem Wohnhaus, Hecken 1,2 m hoch an den Gärten.'},
-   {h:'Obstwiese am Hof',x:'Zwölf kleine Bäume im Raster 6 m westlich vom Hof.',cam:[80,5,125,110,-20,35]},
+   {h:'Obstwiese vor der Mauer',x:'Obstbäume im Raster 7 × 8 m im Südwesten außerhalb der Mauer, daneben die Bienenstöcke.',cam:[-120,5,134,120,-150,40]},
    {h:'Wald auf der Terrasse',x:'Kiefern dicht an Felsen und Mauern, Pfade, Teich und Lichtungen bleiben frei. Bäume vor Gebäudekanten verstecken das Raster.',cam:[0,55,-80,270,-15,28]},
    {h:'Büsche und Felsbrocken',x:'Büsche an Wegen und Hauswänden, Felsbrocken an Ufer und Klippenfuß.'}],
   masse:[['Uferbäume','rund 20'],['Obstbäume','12'],['Kiefern','rund 40']],
@@ -1507,6 +1509,10 @@ const bump=(x,c,w)=>{const t=(x-c)/w;return t*t<1?(1-t*t)*(1-t*t):0;};
 const jagM=x=>Math.min(ss(16,26,Math.abs(x)),x<36?1:ss(112,120,x));
 const front=x=>-25-9*bump(x,-118,36)-7*bump(x,134,22)+(vn(x/8+3.3,1.7)-.5)*7*jagM(x);   // Klippenkante mit Buchten und Zacken
 const gcx=z=>-102+4*Math.sin((z+30)/15);
+const rcx=z=>10*ss(-150,-135,z)*ss(-28,-45,z)*Math.sin((z+121)/14);          // Flusslinie auf der Terrasse
+const rsp=z=>(z>-105&&z<-60)?11*Math.sin(Math.PI*(z+105)/45):0;              // Abstand der zwei Arme
+function riverD(x,z){if(z<-153||z>-20)return 99;const c=rcx(z),d=rsp(z);
+  if(d<3)return Math.abs(x-c)-8;return Math.min(Math.abs(x-c+d),Math.abs(x-c-d))-4.5;}
 function gorgeD(x,z){if(z>-18||z<-80||x>-80||x<-124)return 99;if(z<-72)return Math.hypot(x-gcx(-72),z+72)-5;return Math.abs(x-gcx(z))-(5+6*ss(-72,-27,z));}
 const inGorge=(x,z,m)=>gorgeD(x,z)<(m||0);
 const talusM=x=>Math.max(ss(-76,-88,x)*ss(8,16,Math.abs(x-gcx(-27))),ss(110,120,x));             // Schuttkegel nur wo frei
@@ -1522,7 +1528,7 @@ function hTer(x,z){
     if(z>fr-5&&ax>12)base-=(1-(fr-z)/5)*(1.2+3*n);
     const gd=gorgeD(x,z);if(gd<3){const fl=4+16*ss(-30,-72,z)+(n-.5)*2;base=fl+(base-fl)*ss(-2,3,gd);}
     if(z<-152)base=55+ss(-152,-160,z)*(88+40*n);
-    if(ax<10&&z>=-152)base=46;
+    if(z>=-152&&riverD(x,z)<0)base=46;
     if(ax<9&&z<-152)base=141;
   } else {
     base=1.6+2*n;
@@ -1536,7 +1542,7 @@ function hTer(x,z){
 }
 function regionOf(x,z){const ax=Math.abs(x);if(!inArea(x,z))return 0;
   if(z<front(x)&&gorgeD(x,z)<3)return 7;if(z>=front(x)&&distBrook(x,z)<4.5)return 7;
-  if(z<front(x)){if(ax<9&&z<-152)return 4;if(ax<10)return 3;return 2;}
+  if(z<front(x)){if(ax<9&&z<-152)return 4;if(riverD(x,z)<1.5)return 3;return 2;}
   if(ax<12&&z<22)return 5;if(lakeE(x,z)<1)return 5;if(z>95&&Math.abs(x-mz(z))<8)return 6;return 1;}
 const RW=new Float32Array(8);
 const REGSTEP=[null,[2,1],[2,1],[2,2],[2,3],[2,4],[2,5],[2,6]];
@@ -1718,7 +1724,9 @@ at(2,1);(function(){const g=part(0,0,0,'pop');const rm=new THREE.InstancedMesh(R
 /* ================= Phase 4: Wasser ================= */
 function mist(g,list){list.forEach(m=>{const s=new THREE.Sprite(new THREE.SpriteMaterial({map:puffTex,transparent:true,opacity:.55,depthWrite:false}));s.position.set(m[0],m[1],m[2]);s.scale.set(m[3],m[3]*.6,1);g.add(s);});}
 (function(){
-  at(3,1);const kw=part(0,0,0,'fade');box(kw,20,.2,127,0,52,-88.5,M.water);bLabel('Kanal 6 m tief',0,60,-90);
+  at(3,1);const kw=part(0,0,0,'fade');{const L=(a,b,f,w)=>{const pts=[];for(let z=a;z<=b+.01;z+=1.5)pts.push([f(z),z]);kw.add(ribbon(pts,w,M.water,52.1));};
+    L(-152,-103,rcx,16.5);L(-62,-26,rcx,16.5);L(-106,-59,z=>rcx(z)-rsp(z),9.5);L(-106,-59,z=>rcx(z)+rsp(z),9.5);}
+  bLabel('Fluss mit Insel · 6 m tief',rcx(-82),62,-82);
   at(3,2);const up=part(0,0,0,'fade');const u=new THREE.Mesh(new THREE.PlaneGeometry(16,89),M.fall);u.position.set(0,96.5,-151.3);up.add(u);mist(up,[[0,56,-140,34],[0,60,-132,22]]);
   bLabel('Obere Fallstufe · 85 m',0,140,-150);
   at(3,3);const lo=part(0,0,0,'fade');const l=new THREE.Mesh(new THREE.PlaneGeometry(19,54),M.fall);l.position.set(0,26,-24.6);l.rotation.x=-.08;lo.add(l);
@@ -1857,7 +1865,7 @@ function dense(pts,stepLen){const out=[];for(let i=0;i<pts.length-1;i++){const a
 function arc(a0,a1){const o=[];for(let a=a0;a<=a1+.01;a+=3){const r=a*Math.PI/180,k=1+.025*Math.sin(r*4+.7);o.push([58*k*Math.cos(r),60+53*k*Math.sin(r)]);}return o;}
 function smooth(pts,sp){const c=new THREE.CatmullRomCurve3(pts.map(p=>new THREE.Vector3(p[0],0,p[1])));const n=Math.max(2,Math.round(c.getLength()/(sp||2.5)));return c.getSpacedPoints(n).map(v=>[v.x,v.z]);}
 function paths(list){const g=new THREE.Group();list.forEach(l=>{const m=ribbon(l.arc?l.pts:smooth(l.pts),l.w,M.path);m.material.side=THREE.DoubleSide;g.add(m);});return g;}
-const PATHS_W=[{arc:1,pts:arc(100,262),w:6},{pts:[[-14,12],[-34,25],[-50,28],[-72,28],[-92,24],[-104,22]],w:5},{pts:[[-55,44],[-62,42],[-68,42]],w:3},{pts:[[-92,54],[-94,62],[-94,76],[-97,88],[-91,99],[-82,100]],w:3},{pts:[[-44,98],[-56,100],[-66,100]],w:3}];
+const PATHS_W=[{arc:1,pts:arc(100,262),w:6},{pts:[[-14,12],[-34,25],[-50,28],[-72,30],[-86,32],[-96,32]],w:5},{pts:[[-55,46],[-61,45],[-67,46]],w:3},{pts:[[-92,58],[-94,64],[-94,76],[-97,88],[-91,99],[-82,100]],w:3},{pts:[[-44,98],[-56,100],[-66,100]],w:3}];
 const PATHS_E=[{arc:1,pts:arc(-80,80),w:6},{pts:[[14,19],[34,22],[60,18],[66,6],[54,-12],[50,-17]],w:4},{pts:[[57,40],[78,43],[92,40]],w:3},{pts:[[59,60],[71,60]],w:3},{pts:[[64,70],[80,72],[92,80]],w:3},{pts:[[41,99],[58,108],[84,124],[98,124]],w:3}];
 function fence(pts){const g=new THREE.Group();const posts=[],rails=[];
   for(let i=0;i<pts.length-1;i++){const a=pts[i],b=pts[i+1],L=Math.hypot(b[0]-a[0],b[1]-a[1]),n=Math.max(1,Math.round(L/3));
@@ -1873,7 +1881,7 @@ function fence(pts){const g=new THREE.Group();const posts=[],rails=[];
 const TOWN=[
  {n:'Schmiede',ax:true,x:-40,z:2,w:18,d:12,h:8,f:'S',r:'slate',zone:'W',st:[9,1],ch:true,stone:true,work:true,npc:['Oswald Anders · Schmied','Rochelle Anders · Assistentin']},
  {n:'Schreinerei',ax:true,x:-62,z:16,w:16,d:12,h:7,f:'E',r:'thatch',zone:'W',st:[9,2],work:true,npc:['Cade Hawthorn · Schreiner','Aunt Braelyn · Assistentin']},
- {n:'Barbierstube',ax:true,x:-100,z:34,w:10,d:10,h:7,f:'E',r:'slate',zone:'W',st:[9,4],work:true,npc:['Elio Ricci · Barbier']},
+ {n:'Barbierstube',ax:true,x:-110,z:28,w:10,d:10,h:7,f:'E',r:'slate',zone:'W',st:[9,4],work:true,npc:['Elio Ricci · Barbier']},
  {n:'Wohnhaus W5',ax:true,x:-82,z:14,w:12,d:10,h:8,f:'E',r:'slate',zone:'W',st:[9,4],ch:true,jetty:true,npc:['Mei-Yin Chen · Händlerin']},
  {n:'Fischerhaus',ax:true,x:-68,z:80,w:10,d:12,h:6,f:'E',r:'thatch',zone:'W',st:[9,5],work:true,npc:['Captain Melville Fontane · Fischer']},
  {n:'Wohnhaus W1',x:-84,z:66,w:10,d:12,h:8,f:'E',r:'slate',zone:'W',st:[9,6],ch:true,jetty:true,npc:['Robert Gibson']},
@@ -1886,7 +1894,7 @@ const TOWN=[
  {n:'Jagdhütte',ax:true,x:100,z:40,w:12,d:10,h:6,f:'W',r:'thatch',zone:'E',st:[10,3],ch:true,work:true,npc:['Athalan Skree · Jäger','Galen Yager · Assistent']},
  {n:'Wohnhaus E3',ax:true,x:66,z:94,w:10,d:12,h:8,f:'W',r:'slate',zone:'E',st:[10,4],ch:true,stone:true,npc:['Anton Godwin','Oscar Godwin']},
  {n:'Wohnhaus E4',x:98,z:82,w:10,d:10,h:6,f:'W',r:'thatch',zone:'E',st:[10,4],npc:['Gunther Galeforth']},
- {n:'Hof',ax:true,x:98,z:112,w:16,d:12,h:7,f:'S',r:'thatch',zone:'E',st:[10,5],ch:true,work:true,npc:['Emily Fray · Farmerin','Fenrig Mills, Jr. · Assistent']}
+ {n:'Hof',ax:true,x:90,z:104,w:16,d:12,h:7,f:'S',r:'thatch',zone:'E',st:[10,5],ch:true,work:true,npc:['Emily Fray · Farmerin','Fenrig Mills, Jr. · Assistent']}
 ];
 const KEEP=[{n:'Alchemistenlabor (Hauptbau)',x:-53,y:92,z:-80,npc:['Balthazar · Alchemist','Lady Leclair · Assistentin']},
  {n:'Archiv (Felssaal West)',x:-29,y:132,z:-145,npc:['Loraine Crim · Forscherin']},
@@ -1918,46 +1926,60 @@ TOWN.forEach(house);
 (function(){
   at(9,1);let g=part(-40,hTer(-40,2)-1.2,2);box(g,3,2.5,3,-6,2.4,-7.5,M.found);cyl(g,.8,1.2,-2,2.4,9,M.dark);
   at(9,2);g=part(-62,hTer(-62,16),16);for(let i=0;i<4;i++)box(g,1,1,8,-4+i*1.1,0,-9,M.wood);box(g,4.6,1,8,-2.4,1,-9,M.plank);
-  at(9,3);g=part(-80,hTer(-80,42)-.3,42);box(g,24,.6,20,0,0,0,M.pave);
+  at(9,3);g=part(-82,hTer(-82,46)-.3,46);box(g,30,.6,22,0,0,0,M.pave);
   [[-7,-5],[7,-5],[-7,5],[7,5]].forEach((p,i)=>{box(g,4,2.4,3,p[0],.6,p[1],M.wood);roof(g,4.6,1.6,3.6,p[0],3,p[1],M.can[i]);props(g,p[0]+2.8,.6,p[1],2,i*7);});
   cyl(g,2,1.2,0,.6,0,M.stone2);cyl(g,1.4,.3,0,1.6,0,M.water);for(const s of [-1,1])box(g,.3,3,.3,s*1.6,.6,0,M.wood);roof(g,4,1.5,2.4,0,3.6,0,M.slate);
-  fp('Marktplatz',-80,42,24,20,'W',3,'4 Stände, Brunnen');bLabel('Marktplatz 24 × 20 m · Brunnen',-80,hTer(-80,42)+12,42);
+  fp('Marktplatz',-82,46,30,22,'W',3,'4 Stände, Brunnen, Kirche im Westen');bLabel('Marktplatz 30 × 22 m · Brunnen',-82,hTer(-82,46)+12,46);
   at(9,5);g=part(-50,0,84);box(g,18,.5,3,0,.3,0,M.plank);for(const x of [-8,-2,4,8])box(g,.5,2.2,.5,x,-1.6,1.6,M.wood);fp('Steg West',-50,84,18,3,'P',3,'');
   at(10,7);g=part(48,0,58);box(g,18,.5,3,0,.3,0,M.plank);for(const x of [-8,-2,4,8])box(g,.5,2.2,.5,x,-1.6,1.6,M.wood);fp('Steg Ost',48,58,18,3,'P',4,'');bLabel('Steg Ost 18 m',48,6,58);
   at(9,7);g=part(0,0,4);box(g,30,1,4,0,.6,0,M.plank);box(g,30,.3,.3,0,2.4,1.9,M.wood);box(g,30,.3,.3,0,2.4,-1.9,M.wood);
   for(const x of [-14,-7,0,7,14]){box(g,.3,2,.3,x,.6,1.9,M.wood);box(g,.3,2,.3,x,.6,-1.9,M.wood);}
   fp('Fußbrücke',0,4,30,4,'P',3,'über den Zulauf');bLabel('Fußbrücke 30 m',0,8,4);
-  at(9,8);reg(fence([[-122,0],[-122,94],[-100,118],[-60,122]]),'pop');bLabel('Gartenzaun · Pfosten alle 3 m',-122,8,60);
+  at(9,8);reg(fence([[-124,72],[-124,92],[-104,110],[-84,118]]),'pop');bLabel('Gartenzaun · Pfosten alle 3 m',-118,8,96);
   at(10,3);g=part(100,hTer(100,40),40);for(const z of [-3,3]){box(g,.3,3,.3,-9,0,z,M.wood);box(g,.3,3,.3,-9,0,z+2.5,M.wood);box(g,.2,2,2.3,-9,1,z+.1,M.fur);}
-  at(10,6);g=part(108,hTer(108,141)-.2,141);for(let i=0;i<5;i++)box(g,30,.5,1.6,-13,0,-9+i*1.9,i%2?M.fieldB:M.fieldG);for(let i=0;i<12;i++)box(g,1.6,.5,16-(i%3)*2,5+i*1.95,0,-6+(i%3),i%2?M.fieldG:M.fieldB);for(let i=0;i<3;i++)box(g,24-i*3,.5,1.6,-14+i*1.5,0,2.5+i*1.9,i%2?M.fieldB:lam(0xb9a24c));box(g,1.2,1.4,8,-.5,0,-5,M.hedge);box(g,22,1.2,1.2,-15,0,1.2,M.hedge);
-  box(g,58,1.2,.4,0,0,-9,M.wood);box(g,58,1.2,.4,0,0,9,M.wood);fp('Felder',108,141,56,18,'E',4,'neben dem Abfluss');bLabel('Felder 56 × 18 m',108,hTer(108,141)+6,141);
-  at(10,8);reg(fence([[110,36],[132,36],[132,58],[110,58],[110,36]]),'pop');reg(fence([[78,152],[138,152]]),'pop');
+  at(10,6);g=part(124,hTer(124,138)-.2,138);for(let i=0;i<5;i++)box(g,30,.5,1.6,-13,0,-9+i*1.9,i%2?M.fieldB:M.fieldG);for(let i=0;i<12;i++)box(g,1.6,.5,16-(i%3)*2,5+i*1.95,0,-6+(i%3),i%2?M.fieldG:M.fieldB);for(let i=0;i<3;i++)box(g,24-i*3,.5,1.6,-14+i*1.5,0,2.5+i*1.9,i%2?M.fieldB:lam(0xb9a24c));box(g,1.2,1.4,8,-.5,0,-5,M.hedge);box(g,22,1.2,1.2,-15,0,1.2,M.hedge);
+  box(g,58,1.2,.4,0,0,-9,M.wood);box(g,58,1.2,.4,0,0,9,M.wood);fp('Felder',124,138,56,18,'E',4,'vor der Mauer');bLabel('Felder vor der Mauer',124,hTer(124,138)+6,138);
+  at(10,8);reg(fence([[110,36],[132,36],[132,58],[110,58],[110,36]]),'pop');reg(fence([[96,152],[152,152]]),'pop');
   fp('Koppel',121,47,22,22,'E',4,'an der Jagdhütte');bLabel('Koppel 22 × 22 m',121,8,47);
 })();
 function boat(x,z,rot,mast){const g=part(x,-.8,z);g.rotation.y=rot;box(g,2.6,1.3,7.5,0,0,0,M.wood);box(g,1.8,.3,6,0,1.1,0,M.plank);if(mast)cyl(g,.15,8,0,1,0,M.wood);boats.push(g);}
 
 /* ================= Talzugang & Dorfrand ================= */
-const PATHS_S=[{pts:[[-30,153],[-24,140],[-33,126],[-25,116],[-13,112]],w:6},{pts:[[-31,125],[-21,123],[-13,125]],w:4},{pts:[[13,125],[40,121],[66,128],[86,127]],w:4},{pts:[[-29,137],[-45,135],[-70,140],[-90,138.5],[-106,140]],w:3}];
+const WALLPTS=[];
+const SEa=146,SEb=150,SEn=2.4;
+const wallZ=x=>{const t=Math.min(1,Math.abs(x)/SEa);return SEb*Math.pow(Math.max(0,1-Math.pow(t,SEn)),1/SEn);};
+function wallPath(){const o=[];const N=260;for(let i=0;i<=N;i++){const t=i/N*Math.PI,c=Math.cos(t),sn=Math.sin(t);
+    o.push([SEa*Math.sign(c)*Math.pow(Math.abs(c),2/SEn),SEb*Math.pow(sn,2/SEn)]);}
+  const res=[];for(let z=-24;z<0;z+=2)res.push([SEa,z]);
+  for(let i=1;i<o.length;i++){const a=res[res.length-1],b=o[i];const L=Math.hypot(b[0]-a[0],b[1]-a[1]);if(L>=2.6)res.push(b);}
+  for(let z=0;z>=-24;z-=2)res.push([-SEa,z]);return res;}
+
+const PATHS_S=[{pts:[[-30,154],[-28,144],[-33,128],[-25,116],[-13,112]],w:6},{pts:[[-31,125],[-21,123],[-13,125]],w:4},{pts:[[13,125],[40,121],[66,120],[82,116],[90,112]],w:4},{pts:[[-30,134],[-38,131],[-42,130]],w:3}];
 const mills=[];
 (function(){
   let g;
   at(PD,0);reg(paths(PATHS_S),'pop');bLabel('Hauptstraße 6 m',-30,8,136);
-  at(PD,1);g=part(0,0,0);{const xs=[];const segs=[[[-150,146],[-128,150],[-100,153.6],[-64,154.3],[-35,154.5]],[[-25,154.5],[-4.5,154.5]],[[13.5,154.5],[60,153.6],[110,154.4],[150,153.6]]];
-    segs.forEach(sg=>{const c=new THREE.CatmullRomCurve3(sg.map(q=>new THREE.Vector3(q[0],0,q[1])));c.getSpacedPoints(Math.round(c.getLength())).forEach(v=>xs.push([v.x,v.z]));});
-    const lg=new THREE.InstancedMesh(CYL,M.wood,xs.length),tp=new THREE.InstancedMesh(CONE,M.plank,xs.length);
-    xs.forEach((q,i)=>{const x=q[0],z=q[1],y=hTer(x,z)-.6;dmy.rotation.set(0,0,0);dmy.position.set(x,y,z);dmy.scale.set(.5,6.5,.5);dmy.updateMatrix();lg.setMatrixAt(i,dmy.matrix);
-      dmy.position.set(x,y+6.5,z);dmy.scale.set(.5,1.2,.5);dmy.updateMatrix();tp.setMatrixAt(i,dmy.matrix);});
-    g.add(lg,tp);}
-  fp('Palisade',0,154.5,300,1,'D',5,'6,5 m hoch');bLabel('Palisade · Stämme 1 m · 6,5 m hoch',80,14,154.5);
-  at(PD,2);g=part(-30,hTer(-30,154.5)-.6,154.5);
-  for(const s of [-1,1]){box(g,7,14,7,s*8,0,0,M.found);crenels(g,7,7,14,s*8,0,M.stone2);box(g,1.2,2,.3,s*8,9,3.55,M.win);box(g,2.4,7,.3,s*8,3,3.6,M.banner);}
-  box(g,9,4,7,0,10,0,M.found);crenels(g,9,7,14,0,0,M.stone2);
-  const wg=part(mz(154.5),-1.4,154.5);for(let x=-7.5;x<=7.5;x+=1.5)box(wg,.4,6.6,.4,x,0,0,M.wood);box(wg,18,1.2,1.2,0,6.4,0,M.wood);
-  const wt=part(-138,hTer(-138,140)-.3,140);for(const [a,b] of [[-2.5,-2.5],[2.5,-2.5],[-2.5,2.5],[2.5,2.5]])box(wt,.6,12,.6,a,0,b,M.wood);
-  box(wt,6.6,.8,6.6,0,12,0,M.plank);for(const s of [-1,1]){box(wt,6.6,1.2,.3,0,12.8,s*3.2,M.wood);box(wt,.3,1.2,6.6,s*3.2,12.8,0,M.wood);}
-  for(const [a,b] of [[-2.8,-2.8],[2.8,-2.8],[-2.8,2.8],[2.8,2.8]])box(wt,.3,3,.3,a,12.8,b,M.wood);mk(CONE4,M.thatch,wt,5.4,4,5.4,0,15.8,0).rotation.y=Math.PI/4;
-  fp('Torhaus',-30,154.5,23,7,'D',5,'2 Türme 14 m');fp('Wachturm',-138,140,6,6,'D',5,'Plattform 12 m');
-  bLabel('Torhaus · Durchfahrt 9 m',-30,26,154.5);bLabel('Wassertor',mz(154.5),9,154.5);bLabel('Wachturm 16 m',-138,24,140);
+  at(PD,1);g=part(0,0,0);{const P=wallPath(),gz=wallZ(-30),rz=wallZ(mz(150));const seg=[],tw=[];
+    for(let i=0;i<P.length-1;i++){const a=P[i],b=P[i+1],mx=(a[0]+b[0])/2,mzz=(a[1]+b[1])/2;
+      if(Math.hypot(mx+30,mzz-gz)<6||Math.hypot(mx-mz(150),mzz-rz)<8)continue;seg.push([a,b]);WALLPTS.push([mx,mzz]);}
+    const wb=new THREE.InstancedMesh(BOX,M.stone,seg.length),wm=new THREE.InstancedMesh(BOX,M.stone2,seg.length*2),wc=new THREE.InstancedMesh(BOX,M.trim,seg.length);
+    seg.forEach((q,i)=>{const a=q[0],b=q[1],mx=(a[0]+b[0])/2,mzz=(a[1]+b[1])/2,L=Math.hypot(b[0]-a[0],b[1]-a[1])+.4,ang=-Math.atan2(b[1]-a[1],b[0]-a[0]),y=Math.min(hTer(a[0],a[1]),hTer(b[0],b[1]))-1.5;
+      dmy.rotation.set(0,ang,0);dmy.position.set(mx,y,mzz);dmy.scale.set(L,10.5,3);dmy.updateMatrix();wb.setMatrixAt(i,dmy.matrix);
+      dmy.position.set(mx,y+10.5,mzz);dmy.scale.set(L+.2,.6,3.4);dmy.updateMatrix();wc.setMatrixAt(i,dmy.matrix);
+      const ox=Math.sin(ang)*1.3,oz=Math.cos(ang)*1.3;
+      for(const k of [0,1]){dmy.position.set(mx+(k?ox:-ox),y+11.1,mzz+(k?oz:-oz));dmy.scale.set(L*.5,1.8,.6);dmy.updateMatrix();wm.setMatrixAt(i*2+k,dmy.matrix);}});
+    dmy.rotation.set(0,0,0);g.add(wb,wm,wc);}
+  bLabel('Stadtmauer im Halbkreis · 9 m hoch',100,20,110);
+  at(PD,2);g=part(-30,hTer(-30,wallZ(-30))-.6,wallZ(-30));
+  for(const s of [-1,1]){box(g,7,15,7,s*8,0,0,M.found);crenels(g,7,7,15,s*8,0,M.stone2);box(g,1.2,2,.3,s*8,10,3.55,M.win);box(g,2.4,7,.3,s*8,4,3.6,M.banner);mk(CONE,M.slate,g,4.6,6,4.6,s*8,17,0);}
+  box(g,9,5,7,0,10,0,M.found);crenels(g,9,7,15,0,0,M.stone2);mk(ARCH,M.dark,g,9,10,1,0,0,3.6);
+  {const wz=wallZ(mz(150));const wg=part(mz(150),-1.4,wz);for(let x=-7.5;x<=7.5;x+=1.5)box(wg,.4,6.6,.4,x,0,0,M.wood);box(wg,18,2,4,0,9,0,M.stone);crenels(wg,18,4,11,0,0,M.stone2);
+    for(const s of [-1,1]){box(wg,3.6,12,4,s*10.5,0,0,M.stone);}bLabel('Wassertor',mz(150),16,wz);}
+  {const TW=[0.18,0.62,1.05,1.95,2.45,2.96];TW.forEach(t=>{const c=Math.cos(t),sn=Math.sin(t),x=SEa*Math.sign(c)*Math.pow(Math.abs(c),2/SEn),z=SEb*Math.pow(sn,2/SEn);
+      const tg=part(x,hTer(x,z)-1.5,z);cyl(tg,4.6,15,0,0,0,M.stone2);cyl(tg,5,1,0,15,0,M.trim);ringCrenels(tg,4.8,16,M.stone,12);mk(CONE,M.slate,tg,5,7,5,0,17.5,0);box(tg,1.2,2.4,.3,0,9,4.65,M.win);WALLPTS.push([x,z]);});
+    for(const x of [-SEa,SEa]){const tg=part(x,hTer(x,-22)-1,-22);cyl(tg,4,13,0,0,0,M.stone2);ringCrenels(tg,4.2,13,M.stone,10);mk(CONE,M.slate,tg,4.4,6,4.4,0,14.5,0);}}
+  fp('Torhaus',-30,wallZ(-30),23,7,'D',5,'2 Türme 15 m');
+  bLabel('Torhaus · Durchfahrt 9 m',-30,28,wallZ(-30));bLabel('8 Mauertürme · Ø 9 m',-128,26,62);
   at(PD,3);g=part(0,0,125);box(g,26,1.2,6,0,1.4,0,M.trim);for(const s of [-1,1]){box(g,26,1,.6,0,2.6,s*2.7,M.stone2);box(g,3,4.4,6,s*10,-2.4,0,M.trim);}
   const ar=new THREE.Mesh(new THREE.TorusGeometry(7,1.2,8,20,Math.PI),M.trim);ar.position.set(0,-4.6,0);ar.scale.set(1,1,2.5);g.add(ar);
   fp('Steinbrücke',0,125,26,6,'P',5,'Bogen 14 m');bLabel('Steinbrücke 26 × 6 m',0,8,125);
@@ -1968,24 +1990,26 @@ const mills=[];
   for(let i=0;i<12;i++){const pg=new THREE.Group();pg.rotation.x=i/12*Math.PI*2;box(pg,1.8,1.4,.3,0,3.4,0,M.plank);box(pg,.2,3.4,.2,0,0,0,M.wood);wheel.add(pg);}
   const ax=mk(CYL,M.wood,wheel,.5,6,.5,-.2,0,0);ax.rotation.z=-Math.PI/2;g.add(wheel);mills.push(wheel);
   fp('Wassermühle',22,135,14,12,'D',5,'Rad Ø 9 m im Abfluss');bLabel('Wassermühle 14 × 12 m · Rad Ø 9 m',18,my+20,135);
-  at(PD,5);g=part(120,hTer(120,116)-1.2,116);box(g,15,2.4,11,0,0,0,M.found);box(g,14,7,10,0,2.4,0,M.wood);roof(g,14,7,10,0,9.4,0,M.thatch);
+  at(PD,5);g=part(116,hTer(116,80)-1.2,80);box(g,15,2.4,11,0,0,0,M.found);box(g,14,7,10,0,2.4,0,M.wood);roof(g,14,7,10,0,9.4,0,M.thatch);
   box(g,5,5.5,.3,0,2.4,5.05,M.dark);for(const x of [-5,5])box(g,.4,7,.4,x,2.4,5.1,M.plank);
-  const hs=part(0,0,0);for(const x of [110,114,118]){const y=hTer(x,104)-.2;cyl(hs,1.8,2.2,x,y,104,M.thatch);mk(CONE,M.thatch,hs,1.95,2.2,1.95,x,y+2.2,104);}
-  fp('Scheune',120,116,14,10,'E',5,'Tor 5 m');bLabel('Scheune 14 × 10 m · 3 Heuschober',116,hTer(120,116)+20,112);
-  at(PD,6);const cy=hTer(-112,140)-1;g=part(-112,cy,140);box(g,11,1.6,17,0,0,0,M.found);box(g,10,9,16,0,1.6,0,M.found);roof(g,10,6,16,0,10.6,0,M.slate);
-  box(g,5.4,19,5.4,0,1.6,-9.2,M.found);mk(CONE4,M.slate,g,4.2,8,4.2,0,20.6,-9.2).rotation.y=Math.PI/4;
-  let dm=mk(ARCH,M.dark,g,2.6,4.2,1,5.05,1.6,2);dm.rotation.y=Math.PI/2;
-  for(const z of [-4,0,4])for(const s of [-1,1]){const w=mk(ARCH,M.win,g,1.4,3.4,1,s*5.05,4.6,z);w.rotation.y=Math.PI/2;}
-  const gy=part(0,0,0,'pop');for(let i=0;i<5;i++)for(let j=0;j<2;j++){const x=-94+i*3.6,z=146.5+j*3;box(gy,.9,1.2,.3,x,hTer(x,z)-.1,z,M.trim);}
-  gy.add(fence([[-97,144],[-79,144],[-79,152],[-97,152],[-97,147]]));
-  fp('Kapelle',-112,140,10,16,'W',5,'Turm rund 29 m');fp('Friedhof',-88,148,18,8,'W',5,'mit Zaun');bLabel('Kapelle 10 × 16 m · Friedhof',-100,cy+33,142);
-  at(PD,7);house({n:'Lagerhaus',x:-50,z:146,w:12,d:8,h:6,f:'E',r:'slate',zone:'D',st:[PD,7],work:true,npc:[],stake:5,info:'Tor zur Hauptstraße'});
+  const hs=part(0,0,0);for(const [x,z] of [[104,98],[108,103],[104,108]]){const y=hTer(x,z)-.2;cyl(hs,1.8,2.2,x,y,z,M.thatch);mk(CONE,M.thatch,hs,1.95,2.2,1.95,x,y+2.2,z);}
+  fp('Scheune',116,80,14,10,'E',5,'Tor 5 m');bLabel('Scheune 14 × 10 m · 3 Heuschober',112,hTer(116,80)+20,90);
+  at(PD,6);const cy=hTer(-108,46)-1;g=part(-108,cy,46);box(g,23,1.6,13,0,0,0,M.found);box(g,22,13,12,0,1.6,0,M.found);roof(g,22,8,12,0,14.6,0,M.slate);
+  cyl(g,6,11,-11,1.6,0,M.found).scale.set(5.5,11,6);mk(new THREE.SphereGeometry(1,14,7,0,Math.PI*2,0,Math.PI/2),M.slate,g,5.5,5,6,-11,12.6,0);
+  box(g,7.4,26,7.4,12.5,1.6,0,M.found);box(g,8,1,8,12.5,27.6,0,M.trim);crenels(g,8,8,28.6,12.5,0,M.stone2);mk(CONE4,M.slate,g,5.4,12,5.4,12.5,28.6,0).rotation.y=Math.PI/4;
+  for(const y of [18,23])box(g,.3,3,1.6,16.25,y,0,M.win);
+  let dm=mk(ARCH,M.dark,g,3.4,6,1,16.25,1.6,0);dm.rotation.y=Math.PI/2;
+  for(const x of [-6,-1,4])for(const s of [-1,1])mk(ARCH,M.win,g,1.6,5,1,x,5.6,s*6.05);
+  const gy=part(0,0,0,'pop');for(let i=0;i<5;i++)for(let j=0;j<2;j++){const x=-118+i*3.6,z=60+j*3.4;box(gy,.9,1.2,.3,x,hTer(x,z)-.1,z,M.trim);}
+  gy.add(fence([[-120,56],[-100,56],[-100,67],[-120,67],[-120,59]]));
+  fp('Kirche',-106,46,26,13,'W',3,'Turm bis rund 42 m');fp('Friedhof',-110,61.5,20,11,'W',3,'mit Zaun');bLabel('Kirche am Markt · Turm 42 m · Friedhof',-102,cy+46,46);
+  at(PD,7);house({n:'Lagerhaus',x:-48,z:130,w:12,d:8,h:6,f:'E',r:'slate',zone:'D',st:[PD,7],work:true,npc:[],stake:5,info:'Tor zur Hauptstraße'});
   at(PD,8);g=part(0,0,0,'pop');
-  for(const z of [114,121,128,135,142]){const y=hTer(55,z);box(g,1,1.1,1,55,y,z,M.thatch);box(g,1.3,.25,1.3,55,y+1.1,z,M.wood);}
+  for(const x of [-104,-98,-92,-86]){const z=146-(x+104)*.2,y=hTer(x,z);box(g,1,1.1,1,x,y,z,M.thatch);box(g,1.3,.25,1.3,x,y+1.1,z,M.wood);}
   for(const [x,z] of [[-94,64],[-114,76],[89,58],[108,82]]){const y=hTer(x,z)-.1;for(let k=0;k<4;k++)box(g,6,.4,.8,x,y,z-1.5+k,k%2?M.fieldB:M.fieldG);}
   for(const x of [-70,-66,-62]){const y=hTer(x,90);box(g,.25,2.4,.25,x-1.2,y,90,M.wood);box(g,.25,2.4,.25,x+1.2,y,90,M.wood);box(g,2.6,.15,.15,x,y+2.3,90,M.wood);box(g,2.3,1.6,.08,x,y+.7,90,M.fur);}
   {const y=hTer(-75,95);box(g,4,3.5,4,-75,y,95,M.wood);roof(g,4,2,4,-75,y+3.5,95,M.thatch);box(g,1,2,1,-74,y+4,94,M.found);chimneys.push([-74,y+6.5,94]);}
-  bLabel('Bienenstöcke',55,6,128);bLabel('Gemüsegärten',-94,6,64);bLabel('Netzgestelle + Räucherhütte',-68,8,92);
+  bLabel('Bienenstöcke vor der Mauer',-95,6,144);bLabel('Gemüsegärten',-94,6,64);bLabel('Netzgestelle + Räucherhütte',-68,8,92);
 })();
 
 /* ================= Verwunschene Festung ================= */
@@ -2076,7 +2100,7 @@ const PATHS_T=[[[-28,-40],[-29,-62],[-27,-86],[-31,-104],[-46,-118]],
   fp('Ruinenpavillon',-108,-140,18,18,'F',6,'8 Säulen, verfallen');bLabel('Ruinenpavillon Ø 12 m',-108,70,-140);
   // 9 Wildblumen, Farne, Moos, Leuchtpilze, Glühwürmchen
   at(PG,9);g=part(0,0,0,'pop');{
-    const onTerr=(x,z)=>Math.abs(x)<148&&z>-150&&z<front(x)-3&&Math.abs(x)>11&&!inGorge(x,z,2);
+    const onTerr=(x,z)=>Math.abs(x)<148&&z>-150&&z<front(x)-3&&riverD(x,z)>1.5&&!inGorge(x,z,2);
     const free=(x,z,m)=>{for(const f of fps){if(Math.abs(x-f.x)<f.w/2+m&&Math.abs(z-f.z)<f.d/2+m)return false;}for(const q of SOFT)if(Math.hypot(x-q[0],z-q[1])<q[2]*.8)return false;return true;};
     const FC=[0x9b6fd1,0xf1eee4,0xe9c84a,0xe39ac0,0x7f8de0].map(c=>new THREE.Color(c));
     const fm=new THREE.InstancedMesh(SPH,lam(0xffffff),900);let n=0;
@@ -2104,7 +2128,7 @@ const PATHS_T=[[[-28,-40],[-29,-62],[-27,-86],[-31,-104],[-46,-118]],
 })();
 
 /* ================= Bäume & Gärten ================= */
-function blocked(x,z,m){if(inGorge(x,z,m+1)||distBrook(x,z)<4+m)return true;for(const f of fps){if(Math.abs(x-f.x)<f.w/2+m&&Math.abs(z-f.z)<f.d/2+m)return true;}
+function blocked(x,z,m){if(inGorge(x,z,m+1)||distBrook(x,z)<4+m||riverD(x,z)<m+1)return true;for(const q of WALLPTS)if(Math.hypot(x-q[0],z-q[1])<3+m)return true;for(const f of fps){if(Math.abs(x-f.x)<f.w/2+m&&Math.abs(z-f.z)<f.d/2+m)return true;}
   for(const q of SOFT)if(Math.hypot(x-q[0],z-q[1])<q[2]+m)return true;
   const e=Math.sqrt((x/58)**2+((z-60)/53)**2);if(Math.abs(e-1)<.09)return true;if(lakeE(x,z)<1.12)return true;
   for(const a of ALT){if(Math.hypot(x-a.x,z-a.z)<5)return true;}return false;}
@@ -2115,9 +2139,9 @@ function blocked(x,z,m){if(inGorge(x,z,m+1)||distBrook(x,z)<4+m)return true;for(
   TOWN.forEach((b,i)=>{if(b.work&&b.n!=='Hof')return;const back={S:[0,-1],N:[0,1],E:[-1,0],W:[1,0]}[b.f];
     for(let k=0;k<2;k++){const x=b.x+back[0]*(b.w/2+3.5)+(k?4:-4)*Math.abs(back[1]),z=b.z+back[1]*(b.d/2+3.5)+(k?4:-4)*Math.abs(back[0]);
       if(!blocked(x,z,1.5))addTree(x,z,1,.6+hash(i,k)*.25,LEAF[(i+k)%5],[PT,1],null);}});
-  for(let x=60;x<=76;x+=6)for(let z=110;z<=146;z+=9)addTree(x,z,1,.55,0x5f7d36,[PT,2],null);
+  for(let x=-142;x<=-112;x+=7)for(let z=118;z<=150;z+=8){if(z<wallZ(x)+5)continue;addTree(x,z,1,.55,0x5f7d36,[PT,2],null);}
   let c=0;for(let i=0;i<900&&c<70;i++){const x=(hash(i,7)-.5)*290,z=-30-hash(7,i)*118;
-    if(Math.abs(x)<16||blocked(x,z,3)||(z>-60&&x>-26&&x<26))continue;addTree(x,z,0,.7+hash(i,i)*.5,[0x2f4a2e,0x35522f,0x2a4430][i%3],[PT,3],null);c++;}
+    if(blocked(x,z,3)||(z>-60&&x>-26&&x<26))continue;addTree(x,z,0,.7+hash(i,i)*.5,[0x2f4a2e,0x35522f,0x2a4430][i%3],[PT,3],null);c++;}
   let b=0;for(let i=0;i<900&&b<90;i++){const x=(hash(i,13)-.5)*300,z=-10+hash(13,i)*165;
     if(blocked(x,z,1)||!inArea(x,z))continue;let near=false;for(const t of TOWN){if(Math.abs(x-t.x)<t.w/2+5&&Math.abs(z-t.z)<t.d/2+5){near=true;break;}}
     if(!near&&hash(i,3)>.3)continue;addTree(x,z,2,.8+hash(i,5)*.5,[0x46652f,0x52702f,0x6b7a2f][i%3],[PT,4],null);b++;}
@@ -2126,8 +2150,9 @@ function blocked(x,z,m){if(inGorge(x,z,m+1)||distBrook(x,z)<4+m)return true;for(
     if(back[0])box(hg,1.2,1.2,t.d+6,cx+back[0]*5,y-.2,cz,M.hedge);else box(hg,t.w+6,1.2,1.2,cx,y-.2,cz+back[1]*5,M.hedge);});
   bLabel('Gärten und Hecken 1,2 m',-110,14,80);
   at(PT,0);bLabel('Uferbäume im Herbstlaub',-60,22,110);
-  at(PT,2);bLabel('Obstwiese 12 Bäume',68,14,128);
+  at(PT,2);bLabel('Obstwiese vor der Mauer',-128,14,138);
   for(let i=0;i<10;i++){const z=-32-hash(i,151)*36,s=i%2?1:-1,c=gcx(z),hw=5+6*ss(-72,-27,z);addTree(c+s*(hw-2.2),z,0,.45+hash(i,152)*.2,[0x2f4a2e,0x35522f][i%2],[PT,3],null);}
+  for(const z of [-92,-84,-76])addTree(rcx(z)+(hash(z,3)-.5)*3,z,z===-84?1:0,.6,z===-84?0x6a7f36:0x35522f,[PT,3],null);
   at(PT,3);bLabel('Wald auf der Terrasse',-100,80,-110);
   at(PT,4);const rocks=part(0,0,0,'pop');const rm=new THREE.InstancedMesh(ROCK,M.rock,60);let n=0;
   for(let i=0;i<400&&n<60;i++){const x=(hash(i,21)-.5)*300,z=hash(21,i)*150-25;const e=Math.sqrt((x/53)**2+((z-60)/48)**2);
@@ -2146,12 +2171,12 @@ buildForestMeshes();
   at(PL,2);t=part(0,0,0,'pop');for(const x of [-58,-50,-42])torch(t,x,.6,85.6);for(const x of [42,50,56])torch(t,x,.6,59.6);
   TOWN.forEach(b=>{const y=hTer(b.x,b.z);const o={S:[2.2,b.d/2+1.2],N:[2.2,-b.d/2-1.2],E:[b.w/2+1.2,2.2],W:[-b.w/2-1.2,2.2]}[b.f];torch(t,b.x+o[0],y+1,b.z+o[1]);});
   [[-96,48],[-88,48],[-14,4],[14,4]].forEach(p=>torch(t,p[0],hTer(p[0],p[1])+.5,p[1]));bLabel('Fackel an jeder Tür',-60,14,40);
-  at(PL,2);t=part(0,0,0,'pop');for(const x of [-38.5,-21.5])for(const z of [150,159])torch(t,x,hTer(x,z),z);for(const x of [-13,13])torch(t,x,2.6,128);
-  torch(t,-105.5,hTer(-106,143),143);torch(t,-138,hTer(-138,140)+12.8,140);torch(t,-43,hTer(-43,148),148);torch(t,15,hTer(15,141),141);
+  at(PL,2);t=part(0,0,0,'pop');for(const x of [-38.5,-21.5])for(const z of [wallZ(-30)-4.5,wallZ(-30)+4.5])torch(t,x,hTer(x,z),z);for(const x of [-13,13])torch(t,x,2.6,128);
+  torch(t,-93.5,hTer(-94,49),49);torch(t,-93.5,hTer(-94,43),43);torch(t,-43,hTer(-43,148),148);torch(t,15,hTer(15,141),141);
   at(PL,3);t=part(0,0,0,'pop');for(let a=-80;a<=262;a+=24){if(a>80&&a<100)continue;const r=a*Math.PI/180,x=62*Math.cos(r),z=60+57*Math.sin(r);if(z<14)continue;
     const g=new THREE.Group();g.position.set(x,hTer(x,z),z);box(g,.3,4,.3,0,0,0,M.wood);box(g,1,.2,.2,.4,4,0,M.wood);mk(BOX,M.win,g,.6,.8,.6,.9,3.2,0);t.add(g);}
   bLabel('Laternen alle 25 m',0,10,118);
-  [[-30,8,158],[-53,92,-18],[110,92,-34],[0,66,-30],[34,99,-20],[-92,8,48],[48,10,18],[58,128,-75]].forEach(p=>{const l=new THREE.PointLight(0xffa456,0,90,1.6);l.position.set(p[0],p[1],p[2]);scene.add(l);torchLights.push(l);});
+  [[-30,8,150],[-100,14,46],[-53,92,-18],[110,92,-34],[0,66,-30],[34,99,-20],[-92,8,48],[48,10,18],[58,128,-75]].forEach(p=>{const l=new THREE.PointLight(0xffa456,0,90,1.6);l.position.set(p[0],p[1],p[2]);scene.add(l);torchLights.push(l);});
   at(PL,4);boat(-34,82,.3,true);boat(-30,64,-.2,false);boat(-40,96,1.2,false);boat(30,52,-.5,true);boat(20,78,2.4,false);boat(4,40,.1,false);bLabel('Boote',0,8,60);
   at(PL,5);const sg=part(0,0,0,'pop');chimneys.forEach((c,i)=>{for(let k=0;k<4;k++){const s=new THREE.Sprite(new THREE.SpriteMaterial({map:puffTex,color:0xc9c6c0,transparent:true,opacity:.4,depthWrite:false}));
     s.userData={x:c[0],y:c[1],z:c[2],o:k/4+hash(i,k)*.1};sg.add(s);smokes.push(s);}});bLabel('Rauch aus den Kaminen',-90,30,60);
